@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import image from "../assets/images/man.png";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "./firebase";
 import { Link } from "react-router-dom";
 
 const Nav = () => {

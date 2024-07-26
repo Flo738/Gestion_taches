@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; //on importe la méthode d'authentification de firebase pour creer un compte et se connecter 
-import { auth } from "../../firebase";
+import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import Nav from "./Nav";

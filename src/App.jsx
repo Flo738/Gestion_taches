@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Ajout from "./components/Ajout.jsx";
-import { db } from "./firebase.js";
+import { db } from "./components/firebase.js";
 import {
   setDoc,
   addDoc,
@@ -15,7 +15,7 @@ import {
 } from "firebase/firestore"; //on importe les méthodes depuis firebase pour pouvoir intéragire avec la base de donné 
 import "react-datepicker/dist/react-datepicker.css";
 import Tasks from "./components/Tasks.jsx";
-import { auth } from "./firebase.js";
+import { auth } from "./components/firebase.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./style/style.scss";
@@ -78,7 +78,7 @@ const App = () => {
         if (counterTask.exists()) {
           thenumber = counterTask.data().value;
         }
-
+        
         await addDoc(collection(db, "todo"), {
           todo: input,
           description: description,
@@ -97,7 +97,7 @@ const App = () => {
   }
 
   //fonction qui permet d'afficher une tache comme cmpléter 
-  async function Tacheterminer(index) {  //index va permettre d'identifier le tache 
+  async function Tacheterminer(index) {  //index va permettre d'identifier la tache 
     const yes = doc(db, "todo", todo[index].id); // relier à la base de donnée, au document de la collection dans Firestore. L'id est utilisé pour modifier seulement la tache précise 
     await updateDoc(yes, {
       completed: true,

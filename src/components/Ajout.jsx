@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "./firebase";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
