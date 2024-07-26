@@ -1,0 +1,83 @@
+$custom-background-color: #FEF9EF; 
+
+.background {
+  background-color: $custom-background-color;
+}
+
+$background-nav : #A57F60;
+
+
+.background-nav{
+  background-color: $background-nav;
+}
+
+
+$background-connexion: #E8AE68; 
+
+.background-connexion {
+  background-color: $background-connexion;
+  width: auto;
+  height: 400px;
+  border-radius: 15px;
+}
+
+$title : black;
+.title {
+  color: $title;
+}
+
+$text-color :black;
+
+.text{
+  color: #5c402a;
+}
+
+$date-color :#987152 ;
+.date-color {
+  color: $date-color;
+}
+
+
+$bouton-hover :#A57F60;
+
+.bouton-hover:hover{
+  background-color: $bouton-hover  !important;
+}
+
+$background-li : #E3A587;
+.background-li{
+  background-color: $background-li;
+  border-radius: 15px;
+}
+
+$title-app:  #E3A587;
+.title-app{
+  color: $title-app;
+}
+
+$background-ajt : #E8AE68;
+.background-ajt{
+  background-color: $background-ajt;
+width: auto;
+position: relative;
+height: 300px;
+border-radius: 15px;
+}
+
+
+$bouton :#deb157;
+.bouton{
+  background-color: $bouton;
+}
+
+
+$tache-terminer : line-through; 
+.tache-terminer {
+  text-decoration: line-through;
+}
+
+$decoration : none;
+
+.decoration{
+  list-style-type: none;
+}
