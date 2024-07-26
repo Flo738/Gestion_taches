@@ -1,4 +1,4 @@
-# React + Vite
+
 
 Application de gestion de tâches.
 
@@ -15,3 +15,5 @@ npm install
 
 4-Pour démarrer l'application : 
 npm run dev
+
+
