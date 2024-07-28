@@ -8,7 +8,7 @@ Ce projet est une application react utilisant Vite.
  git clone https://github.com/Flo738/Gestion_taches.git
 
 2-Accédez au répertoire du projet :
-cd-gestion_tache
+cd Gestion_taches
 
 3-Installer les dépendances :
 npm install
