@@ -12,7 +12,7 @@ import {
   onSnapshot,
   updateDoc,
   getDoc,
-} from "firebase/firestore"; //on importe les méthodes depuis firebase pour pouvoir intéragire avec la base de donné 
+} from "firebase/firestore"; //on importe les méthodes depuis firebase pour pouvoir intéragir avec la base de donnée 
 import "react-datepicker/dist/react-datepicker.css";
 import Tasks from "./components/Tasks.jsx";
 import { auth } from "./components/firebase.js";
